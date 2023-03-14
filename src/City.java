@@ -5,12 +5,12 @@ import java.util.ArrayList;
 //  ID, NAME, REGION, DISTRICT, POPULATION, FOUNDATION.
 //  Класс должен отвечать принципу инкапсуляции и иметь метод toString().
 public class City {
-    private int id;
-    private String name;
-    private String region;
-    private String district;
-    private int population;
-    private String foundation;
+private  int id;
+private String name;
+private String region;
+private String district;
+private int population;
+private String foundation;
 
     public int getId() {
         return id;
