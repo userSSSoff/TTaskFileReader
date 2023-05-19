@@ -7,9 +7,9 @@ public class Main {
 
      //    cityMethods.printAllCities(cityMethods.readFile());
 
-      //  cityMethods.groupByRegion(cityMethods.readFile());
+        cityMethods.groupByRegion(cityMethods.readFile());
 
-        cityMethods.searchByName("Астрахань");
+       // cityMethods.searchByName("Астрахань");
 
     }
 }

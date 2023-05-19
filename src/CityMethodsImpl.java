@@ -55,15 +55,23 @@ public class CityMethodsImpl implements CityMethods {
 
     @Override
     public void groupByRegion(City[] cities) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Region!");
-        String getNameRegion = sc.nextLine();
-        for (City c : cities) {
-            if (c.getRegion().equals(getNameRegion)) {
-                System.out.println(c);
+        Map<String, Integer> maaap = new HashMap<>();
+        {
+            int counter = 0;
+            for (City city : cities) {
+                if (maaap.containsKey(city.getRegion())) {
+                    maaap.put(city.getRegion(), counter);
+                } else {
+                    maaap.put(city.getRegion(), counter);
+                    counter += 1;
+                }
+            }
+            for (Map.Entry<String, Integer> i : maaap.entrySet()) {
+                System.out.println(i.getKey() + " = " + i.getValue());
             }
         }
     }
+
 
     @Override
     public void searchByName(String name) {
